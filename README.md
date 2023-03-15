@@ -1,6 +1,6 @@
-# template-typescript-lib
+# eslint-config-prisma
 
-[![trunk](https://github.com/jasonkuhrt/template-typescript-lib/actions/workflows/trunk.yaml/badge.svg)](https://github.com/jasonkuhrt/template-typescript-lib/actions/workflows/trunk.yaml)
+[![trunk](https://github.com/prisma/eslint-config-prisma/actions/workflows/trunk.yaml/badge.svg)](https://github.com/prisma/eslint-config-prisma/actions/workflows/trunk.yaml)
 
 Project template for Node libraries. Features:
 
@@ -22,7 +22,7 @@ The following will get you a ready to go new repository on GitHub based on this 
 
    ```
    corepack enable && \
-   gh repo clone jasonkuhrt/template-typescript-lib <directory> && \
+   gh repo clone prisma/eslint-config-prisma <directory> && \
    cd <directory> && \
    pnpm install && \
    pnpm ts-node scripts/bootstrap.ts
