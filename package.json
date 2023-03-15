@@ -10,13 +10,8 @@
   "scripts": {
     "build:toc": "markdown-toc README.md -i --maxdepth 4 && prettier --write README.md",
     "format": "prettier --write .",
-    "dev": "pnpm clean && tsc --build --watch tsconfig.cjs.json tsconfig.esm.json",
-    "clean": "tsc --build --clean && rm -rf build",
-    "test": "vitest",
     "prepack": "pnpm build",
-    "check:format": "prettier --check .",
-    "check:lint": "eslint . --ext .ts,.tsx --max-warnings 0",
-    "check:types": "tsc --noEmit"
+    "check:format": "prettier --check ."
   },
   "devDependencies": {
     "@prisma-labs/prettier-config": "0.1.0",
