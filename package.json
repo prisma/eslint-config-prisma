@@ -10,7 +10,6 @@
   "scripts": {
     "build:toc": "markdown-toc README.md -i --maxdepth 4 && prettier --write README.md",
     "format": "prettier --write .",
-    "prepack": "pnpm build",
     "check:format": "prettier --check ."
   },
   "devDependencies": {
