@@ -2,7 +2,7 @@
   "name": "eslint-config-prisma",
   "version": "0.0.0-dripip",
   "repository": "git@github.com:prisma/eslint-config-prisma.git",
-  "author": "Jason Kuhrt",
+  "author": "Prisma Data Inc.",
   "packageManager": "pnpm@7.26.0",
   "license": "MIT",
   "type": "commonjs",
