@@ -8,14 +8,12 @@
   "type": "commonjs",
   "main": "./index.js",
   "scripts": {
-    "build:toc": "markdown-toc README.md -i --maxdepth 4 && prettier --write README.md",
     "format": "prettier --write .",
     "check:format": "prettier --check ."
   },
   "devDependencies": {
     "@prisma-labs/prettier-config": "0.1.0",
     "dripip": "0.10.0",
-    "markdown-toc": "1.2.0",
     "prettier": "2.8.4"
   },
   "peerDependencies": {
