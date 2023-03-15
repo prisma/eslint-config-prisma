@@ -16,11 +16,10 @@ npm add -D  eslint-config-prisma \
             eslint-plugin-tsdoc
 ```
 
-Configure your ESLint config to extend from `prisma` and use the `@typescript-eslint/parser` package:
+Configure your ESLint config to extend from `prisma`:
 
 ```json
 {
-  "extends": ["prisma"],
-  "parser": "@typescript-eslint/parser"
+  "extends": ["prisma"]
 }
 ```
