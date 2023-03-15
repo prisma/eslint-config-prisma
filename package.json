@@ -16,18 +16,20 @@
   "devDependencies": {
     "@prisma-labs/prettier-config": "0.1.0",
     "dripip": "0.10.0",
-    "eslint-config-prettier": "8.6.0",
     "markdown-toc": "1.2.0",
     "prettier": "2.8.4"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.52.0",
+    "@typescript-eslint/parser": "5.52.0",
     "eslint": "^8.34",
     "eslint-plugin-deprecation": "^1.3",
     "eslint-plugin-only-warn": "^1.1",
     "eslint-plugin-prefer-arrow": "^1.2",
     "eslint-plugin-simple-import-sort": "^10.0",
-    "eslint-plugin-tsdoc": "^0.2",
-    "@typescript-eslint/eslint-plugin": "5.52.0",
-    "@typescript-eslint/parser": "5.52.0"
+    "eslint-plugin-tsdoc": "^0.2"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.7.0"
   }
 }
