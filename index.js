@@ -1,4 +1,3 @@
-import x from '@typescript-eslint/parser'
 import eslint from '@eslint/js'
 import tsEslint from 'typescript-eslint'
 import preferArrow from 'eslint-plugin-prefer-arrow'
@@ -35,7 +34,6 @@ export default tsEslint.config(
       onlyWarn,
     },
     languageOptions: {
-      parser: x,
       parserOptions: {
         project: './tsconfig.json',
       },
