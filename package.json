@@ -1,7 +1,10 @@
 {
   "name": "eslint-config-prisma",
   "version": "0.0.0-dripip",
-  "repository": "git@github.com:prisma/eslint-config-prisma.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/prisma/eslint-config-prisma.git"
+  },
   "author": "Prisma Data Inc.",
   "packageManager": "pnpm@8.14.1",
   "license": "MIT",
