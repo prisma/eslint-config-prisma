@@ -32,11 +32,6 @@ eslintConfigPrettier,
         // https://github.com/bfanger/eslint-plugin-only-warn
         onlyWarn,
     },
-    languageOptions: {
-        parserOptions: {
-            project: './tsconfig.json',
-        },
-    },
     rules: {
         '@typescript-eslint/consistent-type-imports': 'warn',
         // Enforce backticks
