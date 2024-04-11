@@ -1,18 +1,19 @@
-import { Linter } from 'eslint'
 import eslint from '@eslint/js'
 import tsEslint from 'typescript-eslint'
 import preferArrow from 'eslint-plugin-prefer-arrow'
 import onlyWarn from 'eslint-plugin-only-warn'
 import tsdoc from 'eslint-plugin-tsdoc'
-import deprecation from 'eslint-plugin-deprecation'
 import eslintConfigPrettier from 'eslint-config-prettier'
+import { TSESLint } from '@typescript-eslint/utils'
+// TODO enable this rule once https://github.com/gund/eslint-plugin-deprecation/issues/78
+// import deprecation from 'eslint-plugin-deprecation'
 
-export default [
+export default tsEslint.config(
   eslint.configs.recommended,
   // https://github.com/prettier/eslint-config-prettier
   eslintConfigPrettier,
   // https://github.com/typescript-eslint/typescript-eslint
-  // ...(tsEslint.configs.strictTypeChecked as any),
+  ...tsEslint.configs.strictTypeChecked,
   {
     ignores: [`.vscode`, `.github`, `node_modules`],
     plugins: {
@@ -65,4 +66,4 @@ export default [
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
-] satisfies Linter.FlatConfig[]
+)
