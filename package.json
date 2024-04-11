@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@prisma-labs/prettier-config": "0.1.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint__js": "^8.42.3",
     "dripip": "0.10.0",
     "prettier": "3.2.5",
     "typescript": "^5.4.5"
@@ -27,7 +29,7 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
-    "eslint": "^8",
+    "eslint": "^9",
     "eslint-plugin-deprecation": "^2",
     "eslint-plugin-only-warn": "^1.1",
     "eslint-plugin-prefer-arrow": "^1.2",
