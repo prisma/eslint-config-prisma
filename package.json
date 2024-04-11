@@ -3,10 +3,14 @@
   "version": "0.0.0-dripip",
   "repository": "git@github.com:prisma/eslint-config-prisma.git",
   "author": "Prisma Data Inc.",
-  "packageManager": "pnpm@7.26.0",
+  "packageManager": "pnpm@8.14.1",
   "license": "MIT",
-  "type": "commonjs",
-  "main": "./index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
   "scripts": {
     "format": "prettier --write .",
     "check:format": "prettier --check ."
@@ -14,7 +18,8 @@
   "devDependencies": {
     "@prisma-labs/prettier-config": "0.1.0",
     "dripip": "0.10.0",
-    "prettier": "3.0.3"
+    "prettier": "3.2.5",
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^6",
@@ -23,10 +28,10 @@
     "eslint-plugin-deprecation": "^2",
     "eslint-plugin-only-warn": "^1.1",
     "eslint-plugin-prefer-arrow": "^1.2",
-    "eslint-plugin-simple-import-sort": "^10.0",
     "eslint-plugin-tsdoc": "^0.2"
   },
   "dependencies": {
-    "eslint-config-prettier": "^9.0.0"
+    "eslint-config-prettier": "^9.1.0",
+    "typescript-eslint": "^7.6.0"
   }
 }

@@ -12,14 +12,5 @@ npm add -D  eslint-config-prisma \
             eslint-plugin-deprecation \
             eslint-plugin-only-warn \
             eslint-plugin-prefer-arrow \
-            eslint-plugin-simple-import-sort \
             eslint-plugin-tsdoc
-```
-
-Configure your ESLint config to extend from `prisma`:
-
-```json
-{
-  "extends": ["prisma"]
-}
 ```
