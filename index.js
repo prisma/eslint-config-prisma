@@ -11,7 +11,6 @@ export default tsEslint.config(eslint.configs.recommended,
 eslintConfigPrettier, 
 // https://github.com/typescript-eslint/typescript-eslint
 ...tsEslint.configs.strictTypeChecked, {
-    ignores: [`.vscode`, `.github`, `node_modules`],
     plugins: {
         // This enables the use of a lint rule to reject function declarations. This is
         // preferable as a way to encourage higher order function usage. For example it is not
@@ -55,5 +54,6 @@ eslintConfigPrettier,
         '@typescript-eslint/no-unsafe-argument': 'off',
         '@typescript-eslint/no-unsafe-return': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/ban-ts-comment': ['warn', { 'ts-expect-error': false }],
     },
 });
