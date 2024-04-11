@@ -15,7 +15,6 @@ export default tsEslint.config(
   // https://github.com/typescript-eslint/typescript-eslint
   ...tsEslint.configs.strictTypeChecked,
   {
-    ignores: [`.vscode`, `.github`, `node_modules`],
     plugins: {
       // This enables the use of a lint rule to reject function declarations. This is
       // preferable as a way to encourage higher order function usage. For example it is not
