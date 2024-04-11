@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@eslint/js':
+    specifier: ^9.0.0
+    version: 9.0.0
   '@typescript-eslint/eslint-plugin':
     specifier: ^6
     version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@9.0.0)(typescript@5.4.5)
